@@ -7,7 +7,7 @@
     --color-fondo: #f5f7fa;
 }
 
-/*  */
+/* Diseño neutro para empezar de 0 */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -16,6 +16,7 @@ body {
     color: var(--color-texto);
 }
 
+/* Header */
 header {
     background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
     color: #fff;
@@ -36,6 +37,7 @@ header {
     opacity: 0.9;
 }
 
+/* Navegación */
 .BarraNavegacion ul {
     list-style: none;
     padding: 0;
@@ -64,7 +66,7 @@ header {
     transform: scale(1.1);
 }
 
-.SobreMi, .Habilidades, .Proyectos, .Galería, .RRSS {
+.Habilidades, .Proyectos {
     padding: 60px 20px;
     max-width: 900px;
     margin: auto;
@@ -104,35 +106,6 @@ h2 {
     color: var(--color-secundario);
 }
 
-.Galeria div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.Galeria img {
-    width: 180px;
-    height: 180px;
-    margin: 10px;
-    border-radius: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
-    animation: moverImagen 5s infinite alternate ease-in-out;
-}
-
-@keyframes moverImagen {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(30px);
-    }
-}
-
-.Galeria img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
 /* Reder Sociales */
 .RRSS {
     text-align: center;
@@ -160,19 +133,9 @@ footer {
 
 /* Media queries */
 @media screen and (min-width: 768px) {
-    .Galeria img {
-        width: 200px;
-        height: 200px;
-    }
+    
 }
 
 @media screen and (min-width: 1024px) {
-    .SobreMi, .Habilidades, .Proyectos, .Galería, .RRSS {
-        max-width: 1100px;
-    }
-
-    .Galeria img {
-        width: 220px;
-        height: 220px;
-    }
+    
 }
