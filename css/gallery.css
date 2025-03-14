@@ -79,6 +79,16 @@ h2 {
     margin-bottom: 1em;
 }
 
+.Galeria {
+    max-width: 90%;
+    background: var(--color-fondo);
+    border-radius: 1em;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 1em auto 2.2em auto;
+    padding: 0em 0em 1em 0em;
+    text-align: center;
+}
+
 /* Reder Sociales */
 .RRSS {
     max-width: 90%;
@@ -136,11 +146,29 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-    
+
+    /* Galería */
+    .Galeria {
+        max-width: 75%;
+    }
+
+    /* Redes Sociales */
+    .RRSS {
+        max-width: 75%;
+    }
 }
 
 @media screen and (min-width: 1024px) {
-    
+
+    /* Galería */
+    .Galeria {
+        max-width: 60%;
+    }
+
+    /* Redes Sociales */
+    .RRSS {
+        max-width: 60%;
+    }
 }
 
 /* JavaScript */
