@@ -68,19 +68,58 @@ header {
     transform: scale(1.1);
 }
 
-/* Redes Sociales */
-.RRSS {
+/* Titulos */
+h2 {
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
     text-align: center;
+    font-size: 2em;
+    font-weight: bolder;
+    border-radius: 0.3em;
+    padding: 1em 0em 1em 0em;
+    margin-bottom: 1em;
+}
+
+/* Reder Sociales */
+.RRSS {
+    max-width: 90%;
+    background: var(--color-fondo);
+    border-radius: 1em;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 1em auto 2.2em auto;
+    padding: 0em 0em 1em 0em;
+    text-align: center;
+}
+
+.RRSS:hover {
+    transform: scale(1.0);
+    box-shadow: 0 4px 10px rgb(0, 0, 0);
 }
 
 .RRSS a {
     display: inline-block;
     margin: 10px;
-    transition: transform 0.3s;
+    transition: transform 0.3s, color 0.3s;
+    color: var(--color-primario);
+}
+
+.RRSS a:visited {
+    color: var(--color-primario);
+}
+
+/* Estos dos no lo podia sacar, queria que el hover se viese con el color de señalización pero */
+/* no me dejaba le pregunté al ChatGPT y por el mailto que lo reconoce como diferente */
+.RRSS a[href^="mailto:"] svg {
+    fill: var(--color-primario);
+    transition: fill 0.3s;
+}
+
+.RRSS a[href^="mailto:"]:hover svg {
+    fill: var(--color-senalizacion);
 }
 
 .RRSS a:hover {
-    transform: scale(1.2);
+    transform: scale(1.5);
     color: var(--color-senalizacion);
 }
 
@@ -89,8 +128,12 @@ footer {
     text-align: center;
     background: var(--color-primario);
     color: #fff;
-    padding: 20px;
-    margin-top: 20px;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+.Footer:hover {
+    color: var(--color-senalizacion);
 }
 
 @media screen and (min-width: 768px) {
@@ -99,4 +142,18 @@ footer {
 
 @media screen and (min-width: 1024px) {
     
+}
+
+/* JavaScript */
+
+/* Con este efecto hago que las secciones aparezcan, preguntando a ChatGPT */
+section {
+    opacity: 1;
+    transform: translateY(1em);
+    transition: all 1s ease-in-out;
+}
+
+section.visible {
+    opacity: 0;
+    transform: translateY(0);
 }

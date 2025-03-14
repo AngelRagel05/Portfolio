@@ -87,12 +87,16 @@ h2 {
     transition: transform 0.3s, box-shadow 0.3s;
     margin: 1em auto 2.2em auto;
     padding: 0em 0em 1em 0em;
-    text-align: center;
+    text-align: left;
 }
 
-.SobreMi :hover {
+.SobreMi:hover {
     transform: scale(1.0);
     box-shadow: 0 4px 10px rgb(0, 0, 0);
+}
+
+.SobreMi p {
+    padding: 0em 2em 0em 2em;
 }
 
 /* Reder Sociales */
@@ -151,12 +155,39 @@ footer {
     color: var(--color-senalizacion);
 }
 
+/* Media queries */
 @media screen and (min-width: 768px) {
-    
+
+    /* Sobre mí */
+    .SobreMi {
+        max-width: 75%;
+    }
+
+    .SobreMi p {
+        padding: 0em 2em 0em 2em;
+    }
+
+    /* Redes Sociales */
+    .RRSS {
+        max-width: 75%;
+    }
 }
 
 @media screen and (min-width: 1024px) {
-    
+
+    /* Sobre mí */
+    .SobreMi {
+        max-width: 60%;
+    }
+
+    .SobreMi p {
+        padding: 0em 2em 0em 2em;
+    }
+
+    /* Redes Sociales */
+    .RRSS {
+        max-width: 60%;
+    }
 }
 
 /* JavaScript */
