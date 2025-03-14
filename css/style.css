@@ -12,7 +12,8 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--color-fondo);
+    background: url('../img/Fondo.png');
+    background-size: cover;
     color: var(--color-texto);
 }
 
@@ -38,6 +39,10 @@ header {
 }
 
 /* Navegación */
+.BarraNavegacion {
+    border-radius: 1em;
+}
+
 .BarraNavegacion ul {
     list-style: none;
     padding: 0;
@@ -67,7 +72,70 @@ header {
     transform: scale(1.1);
 }
 
-.Habilidades, .Proyectos, .RRSS{
+/* Titulos */
+h2 {
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    text-align: center;
+    font-size: 2em;
+    font-weight: bolder;
+    border-radius: 0.3em;
+    padding: 1em 0em 1em 0em;
+    margin-bottom: 1em;
+}
+
+/* Skills */
+.negrita {
+    font-weight: bolder;
+}
+
+.Habilidades{
+    max-width: 60%;
+    background: var(--color-fondo);
+    border-radius: 1em;
+    margin: 1em auto 1em auto;
+    padding: 0em 0em 1em 0em;
+}
+
+.Habilidades ul {
+    margin: 1em 0em 1em 0em;
+}
+
+/* Proyectos */
+.Proyectos {
+    max-width: 60%;
+    background: var(--color-fondo);
+    border-radius: 1em;
+    margin: 1em auto 1em auto;
+    padding: 0em 0em 1em 0em;
+}
+
+.Repositorio {
+    max-width: 70%;
+    background: var(--color-primario);
+    color: var(--color-fondo);
+    border-radius: 1em;
+    margin: 1em auto 1em auto;
+    padding: 1em;
+    transition: transform 0.4s;
+}
+
+.Repositorio:hover {
+    transform: translateY(-5px);
+}
+
+.Repositorio h3 a {
+    color: var(--color-secundario);
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.Repositorio h3 a:hover {
+    color: var(--color-senalizacion);
+}
+
+/* Reder Sociales */
+.RRSS {
     padding: 60px 20px;
     max-width: 900px;
     margin: auto;
@@ -75,40 +143,6 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     margin-bottom: 40px;
-}
-
-h2 {
-    color: var(--color-secundario);
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.Repositorio {
-    background: var(--color-fondo);
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    transition: transform 0.3s;
-}
-
-.Repositorio:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.Repositorio h3 a {
-    color: var(--color-primario);
-    text-decoration: none;
-    font-size: 1.4rem;
-}
-
-.Repositorio h3 a:hover {
-    color: var(--color-secundario);
-}
-
-/* Reder Sociales */
-.RRSS {
     text-align: center;
 }
 
@@ -130,6 +164,10 @@ footer {
     color: #fff;
     padding: 20px;
     margin-top: 20px;
+}
+
+.Footer:hover {
+    color: var(--color-senalizacion);
 }
 
 /* Media queries */
