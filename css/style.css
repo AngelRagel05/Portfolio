@@ -268,7 +268,7 @@ footer {
 
 /* JavaScript */
 
-/* Con este efecto hago que las secciones aparezcan, preguntando a ChatGPT */
+/* Con este efecto hago que las secciones se muevan, preguntando a ChatGPT */
 section {
     opacity: 1;
     transform: translateY(1em);
