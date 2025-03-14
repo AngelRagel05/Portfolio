@@ -147,7 +147,23 @@ h2 {
 .RRSS a {
     display: inline-block;
     margin: 10px;
-    transition: transform 0.3s;
+    transition: transform 0.3s, color 0.3s;
+    color: var(--color-primario);
+}
+
+.RRSS a:visited {
+    color: var(--color-primario);
+}
+
+/* Estos dos no lo podia sacar, queria que el hover se viese con el color de señalización pero */
+/* no me dejaba le pregunté al ChatGPT y por el mailto que lo reconoce como diferente */
+.RRSS a[href^="mailto:"] svg {
+    fill: var(--color-primario);
+    transition: fill 0.3s;
+}
+
+.RRSS a[href^="mailto:"]:hover svg {
+    fill: var(--color-senalizacion);
 }
 
 .RRSS a:hover {
