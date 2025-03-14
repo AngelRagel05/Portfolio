@@ -1,0 +1,173 @@
+:root {
+    --color-primario: #1E1E2E;
+    --color-secundario: #89B4FA;
+    --color-senalizacion: #F38BA8;
+    --color-texto: #333;
+    --color-fondo: #f5f7fa;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+header {
+    background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.NombrePersonal {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.Eslogan {
+    font-style: italic;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.BarraNavegacion ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background: var(--color-primario);
+    margin: 0;
+}
+
+.BarraNavegacion ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.BarraNavegacion ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 15px;
+    display: inline-block;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.BarraNavegacion ul li a:hover {
+    background: var(--color-secundario);
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+.SobreMi, .Habilidades, .Proyectos, .Galería, .Contacto {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: var(--color-secundario);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.Repositorio {
+    background: var(--color-fondo);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.Repositorio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.Repositorio h3 a {
+    color: var(--color-primario);
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.Repositorio h3 a:hover {
+    color: var(--color-secundario);
+}
+
+.Galeria div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Galeria img {
+    width: 180px;
+    height: 180px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: moverImagen 5s infinite alternate ease-in-out;
+}
+
+@keyframes moverImagen {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(30px);
+    }
+}
+
+.Galeria img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Contacto {
+    text-align: center;
+}
+
+.Contacto a {
+    display: inline-block;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.Contacto a:hover {
+    transform: scale(1.2);
+    color: var(--color-senalizacion);
+}
+
+footer {
+    text-align: center;
+    background: var(--color-primario);
+    color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .Galeria img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .SobreMi, .Habilidades, .Proyectos, .Galería, .Contacto {
+        max-width: 1100px;
+    }
+
+    .Galeria img {
+        width: 220px;
+        height: 220px;
+    }
+}
