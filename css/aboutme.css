@@ -2,7 +2,7 @@
 :root {
     --color-primario: #1E1E2E;
     --color-secundario: #89B4FA;
-    --color-senalizacion: #F38BA8;
+    --color-senalizacion: #da0ab0;
     --color-texto: #333;
     --color-fondo: #f5f7fa;
 }
@@ -61,6 +61,7 @@ header {
 }
 
 .BarraNavegacion ul li a:hover {
+    color: var(--color-senalizacion);
     background: var(--color-secundario);
     border-radius: 5px;
     transform: scale(1.1);
