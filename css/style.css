@@ -51,7 +51,6 @@ header {
     margin: 0 15px;
 }
 
-
 .BarraNavegacion ul li a {
     text-decoration: none;
     color: #fff;
@@ -89,8 +88,14 @@ h2 {
     max-width: 90%;
     background: var(--color-fondo);
     border-radius: 1em;
+    transition: transform 0.3s, box-shadow 0.3s;
     margin: 1em auto 1em auto;
     padding: 0em 0em 1em 0em;
+}
+
+.Habilidades:hover {
+    transform: scale(1.0);
+    box-shadow: 0 4px 10px rgb(0, 0, 0);
 }
 
 .Habilidades ul {
@@ -106,8 +111,14 @@ h2 {
     max-width: 90%;
     background: var(--color-fondo);
     border-radius: 1em;
+    transition: transform 0.3s, box-shadow 0.3s;
     margin: 1em auto 1em auto;
     padding: 0em 0em 1em 0em;
+}
+
+.Proyectos:hover {
+    transform: scale(1.0);
+    box-shadow: 0 4px 10px rgb(0, 0, 0);
 }
 
 .Repositorio {
@@ -139,9 +150,15 @@ h2 {
     max-width: 90%;
     background: var(--color-fondo);
     border-radius: 1em;
+    transition: transform 0.3s, box-shadow 0.3s;
     margin: 1em auto 2.2em auto;
     padding: 0em 0em 1em 0em;
     text-align: center;
+}
+
+.RRSS:hover {
+    transform: scale(1.0);
+    box-shadow: 0 4px 10px rgb(0, 0, 0);
 }
 
 .RRSS a {
@@ -250,7 +267,8 @@ footer {
     }
 }
 
-/* js */
+/* JavaScript */
+
 /* Con este efecto hago que las secciones aparezcan, preguntando a ChatGPT */
 section {
     opacity: 1;
