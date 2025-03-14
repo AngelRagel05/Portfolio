@@ -85,8 +85,8 @@ h2 {
     font-weight: bolder;
 }
 
-.Habilidades{
-    max-width: 60%;
+.Habilidades {
+    max-width: 90%;
     background: var(--color-fondo);
     border-radius: 1em;
     margin: 1em auto 1em auto;
@@ -97,9 +97,13 @@ h2 {
     margin: 1em 0em 1em 0em;
 }
 
+.Habilidades li {
+    padding: 0em 1em 0em 1em;
+}
+
 /* Proyectos */
 .Proyectos {
-    max-width: 60%;
+    max-width: 90%;
     background: var(--color-fondo);
     border-radius: 1em;
     margin: 1em auto 1em auto;
@@ -132,7 +136,7 @@ h2 {
 
 /* Reder Sociales */
 .RRSS {
-    max-width: 60%;
+    max-width: 90%;
     background: var(--color-fondo);
     border-radius: 1em;
     margin: 1em auto 2.2em auto;
@@ -187,11 +191,47 @@ footer {
 
 /* Media queries */
 @media screen and (min-width: 768px) {
-    
+
+    /* Habilidades */
+    .Habilidades {
+        max-width: 75%;
+    }
+
+    .Habilidades li {
+        padding: 0em 1em 0em 1em;
+    }
+
+    /* Proyectos */
+    .Proyectos {
+        max-width: 75%;
+    }
+
+    /* Redes Sociales */
+    .RRSS {
+        max-width: 75%;
+    }
 }
 
 @media screen and (min-width: 1024px) {
-    
+
+    /* Habilidades */
+    .Habilidades {
+        max-width: 60%;
+    }
+
+    .Habilidades li {
+        padding: 0em 1em 0em 1em;
+    }
+
+    /* Proyectos */
+    .Proyectos {
+        max-width: 60%;
+    }
+
+    /* Redes Sociales */
+    .RRSS {
+        max-width: 60%;
+    }
 }
 
 /* js */
@@ -201,6 +241,7 @@ section {
     transform: translateY(1em);
     transition: all 1s ease-in-out;
 }
+
 section.visible {
     opacity: 0;
     transform: translateY(0);
