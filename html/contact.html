@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Contacto - Ángel Jiménez Ragel</title>
     <link rel="stylesheet" href="/css/contact.css">
     <link rel="shortcut icon" href="/img/ico/Logo.ico" type="image/x-icon">
+    <script src="/js/contactScript.js" defer></script>
 </head>
 <body>
     <header>
@@ -26,8 +27,11 @@
             <h2>Contacto</h2>
             <form id="Formulario">
               <input type="text" name="nombre" placeholder="Tu Nombre" required>
+              <br>
               <input type="email" name="email" placeholder="Tu Correo" required>
+              <br>
               <textarea name="mensaje" placeholder="Tu Mensaje" rows="4" required></textarea>
+              <br>
               <button type="submit">Enviar</button>
               <p id="mensajeExito" style="display: none; color: green;">¡Mensaje enviado con éxito!</p>
             </form>

@@ -35,16 +35,15 @@ header {
 .Eslogan {
     font-style: italic;
     font-size: 1.2rem;
-    opacity: 0.9;
+    opacity: 0.7;
 }
 
 /* Navegación */
 .BarraNavegacion ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
     background: var(--color-primario);
-    margin: 0;
+    list-style: none;
+    text-align: center;
+    border-radius: 0.75em;
 }
 
 .BarraNavegacion ul li {
@@ -87,7 +86,7 @@ h2 {
     border-radius: 1em;
     transition: transform 0.3s, box-shadow 0.3s;
     margin: 1em auto 2.2em auto;
-    padding: 0em 0em 1em 0em;
+    padding: 0em 0em 1.5em 0em;
     text-align: center;
 }
 
@@ -99,20 +98,20 @@ h2 {
 .Contacto form {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    max-width: 90%;
     margin: 0 auto;
 }
 
-.contacto input, .contacto textarea {
+.Contacto input, .Contacto textarea {
     margin: 10px 0;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     border-radius: 5px;
     width: 100%;
 }
 
-.contacto button {
-    background: #007BFF;
+.Contacto button {
+    background: var(--color-secundario);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -124,13 +123,13 @@ h2 {
     overflow: hidden;
 }
 
-.contacto button:hover {
-    background: #0056b3;
+.Contacto button:hover {
+    background: var(--color-primario);
     transform: scale(1.1);
     box-shadow: 0 4px 15px rgba(0, 123, 255, 0.6);
 }
 
-.contacto button:active {
+.Contacto button:active {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4);
 }
@@ -191,9 +190,47 @@ footer {
     color: var(--color-senalizacion);
 }
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
 
-@media screen and (min-width: 1024px) {}
+    /* Contacto */
+    .Contacto {
+        max-width: 75%;
+    }
+
+    .Contacto:hover p {
+        padding: 0em 2em 0em 2em;
+    }
+
+    .Contacto form {
+        max-width: 75%;
+    }
+
+    /* Redes Sociales */
+    .RRSS {
+        max-width: 75%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    /* Contacto */
+    .Contacto {
+        max-width: 60%;
+    }
+
+    .Contacto:hover p {
+        padding: 0em 2em 0em 2em;
+    }
+
+    .Contacto form {
+        max-width: 60%;
+    }
+
+    /* Redes Sociales */
+    .RRSS {
+        max-width: 60%;
+    }
+}
 
 /* JavaScript */
 
