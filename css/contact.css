@@ -7,11 +7,13 @@
     --color-fondo: #f5f7fa;
 }
 
+/* Diseño neutro para empezar de 0 */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--color-fondo);
+    background: url('../img/Fondo.png');
+    background-size: cover;
     color: var(--color-texto);
 }
 
