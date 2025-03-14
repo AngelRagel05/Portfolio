@@ -116,7 +116,7 @@ h2 {
 }
 
 .Repositorio:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
 }
 
 .Repositorio h3 a {
@@ -134,7 +134,7 @@ h2 {
     max-width: 60%;
     background: var(--color-fondo);
     border-radius: 1em;
-    margin: 1em auto 1em auto;
+    margin: 1em auto 2.2em auto;
     padding: 0em 0em 1em 0em;
     text-align: center;
 }
@@ -170,4 +170,16 @@ footer {
 
 @media screen and (min-width: 1024px) {
     
+}
+
+/* js */
+/* Con este efecto hago que las secciones aparezcan, preguntando a ChatGPT */
+section {
+    opacity: 1;
+    transform: translateY(1em);
+    transition: all 1s ease-in-out;
+}
+section.visible {
+    opacity: 0;
+    transform: translateY(0);
 }
