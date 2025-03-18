@@ -106,7 +106,7 @@ h2 {
 .Habilidades li {
     padding: 0em 1em 0em 1em;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -277,7 +277,7 @@ footer {
 
 /* JavaScript */
 
-/* Con este efecto hago que las secciones se muevan, preguntando a ChatGPT */
+/* Con este efecto hago que las secciones suban, preguntando a ChatGPT */
 section {
     opacity: 1;
     transform: translateY(1em);
