@@ -82,7 +82,7 @@ h2 {
 /* Carrusel de los cojones */
 @keyframes carrusel {
     from { transform: translateX(0); }
-    to { transform: translateX(-100%); } /* Se mueve solo medio carrusel para el efecto infinito */
+    to { transform: translateX(-50%); } /* Se mueve solo medio carrusel para el efecto infinito */
 }
 
 .Carrusel {
