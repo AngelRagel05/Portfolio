@@ -76,29 +76,33 @@ h2 {
     font-weight: bolder;
     border-radius: 0.3em;
     padding: 1em 0em 1em 0em;
-    margin-bottom: 1em;
+    margin: 0em 0em 1em 0em;
 }
 
 /* Carrusel de los cojones */
 @keyframes carrusel {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); } /* Se mueve solo medio carrusel para el efecto infinito */
 }
 
 .Carrusel {
     max-width: 90%;
+    overflow: hidden;
+    position: relative;
     border-radius: 1em;
     transition: transform 0.3s, box-shadow 0.3s;
     margin: 1em auto 1em auto;
     padding: 0em 0em 1em 0em;
-    overflow: hidden;
-    position: relative;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.Carrusel .Carrusel-Container {
+.Carrusel-Container {
     display: flex;
-    gap: 20px; /* Espacio entre imágenes */
+    gap: 2em;
     animation: carrusel 15s linear infinite;
+    width: max-content;
 }
 
 .Carrusel:hover {
@@ -108,13 +112,13 @@ h2 {
 
 .Carrusel div {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
 
 }
 
 .Carrusel img {
-    width: auto; /* Ajusta según el tamaño de tus imágenes */
+    width: auto;
     height: 300px;
     flex-shrink: 0;
 }
@@ -178,7 +182,7 @@ footer {
 @media screen and (min-width: 768px) {
 
     /* Galería */
-    .Galeria {
+    .Carrusel {
         max-width: 75%;
     }
 
@@ -191,7 +195,7 @@ footer {
 @media screen and (min-width: 1024px) {
 
     /* Galería */
-    .Galeria {
+    .Carrusel {
         max-width: 60%;
     }
 
