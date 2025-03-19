@@ -79,19 +79,44 @@ h2 {
     margin-bottom: 1em;
 }
 
-.Galeria {
-    max-width: 90%;
-    background: var(--color-fondo);
-    border-radius: 1em;
-    transition: transform 0.3s, box-shadow 0.3s;
-    margin: 1em auto 2.2em auto;
-    padding: 0em 0em 1em 0em;
-    text-align: center;
+/* Carrusel de los cojones */
+@keyframes carrusel {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
 }
 
-img {
-    width: 300px;
-    height: auto;
+.Carrusel {
+    max-width: 90%;
+    border-radius: 1em;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 1em auto 1em auto;
+    padding: 0em 0em 1em 0em;
+    overflow: hidden;
+    position: relative;
+}
+
+.Carrusel .Carrusel-Container {
+    display: flex;
+    gap: 20px; /* Espacio entre imágenes */
+    animation: carrusel 15s linear infinite;
+}
+
+.Carrusel:hover {
+    transform: scale(1.0);
+    box-shadow: 0 4px 10px rgb(0, 0, 0);
+}
+
+.Carrusel div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.Carrusel img {
+    width: auto; /* Ajusta según el tamaño de tus imágenes */
+    height: 300px;
+    flex-shrink: 0;
 }
 
 /* Reder Sociales */
