@@ -101,7 +101,7 @@ h2 {
 .Carrusel-Container {
     display: flex;
     gap: 2em;
-    animation: carrusel 15s linear infinite;
+    animation: carrusel 13s linear infinite;
     width: max-content;
 }
 
