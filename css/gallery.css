@@ -107,6 +107,20 @@ img {
 .Proyecto img {
     filter: drop-shadow(40px 25px 50px #00000087);
     background-color: #000000;
+    
+}
+
+.Proyecto img:hover {
+    animation: rotar 5s linear infinite;
+    cursor: pointer;
+}
+
+@keyframes rotar {
+    from {
+        transform: rotateY(360deg);
+    } to {
+        transform: rotateY(-360deg);
+    }
 }
 
 .Proyecto p {
