@@ -223,14 +223,62 @@ footer {
 
 @media screen and (min-width: 1024px) {
 
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 20% 1px;
+        grid-template-areas: 
+        "Astralis BookTrack"
+        "MP3 Iberdrola"
+        "BauHaus Naturaleza"
+        "RRSS RRSS";
+    }
+
+    header {
+        grid-area: header;
+    }
+
     /* Proyectos */
     .Proyecto {
-        max-width: 60%;
+        max-width: 90%;
+        
+    }
+
+    #Astralis {
+        grid-area: Astralis;
+    }
+
+    #BookTrack {
+        grid-area: BookTrack;
+    }
+
+    #MP3 {
+        grid-area: MP3;
+    }
+
+    #Iberdrola {
+        grid-area: Iberdrola;
+        min-width: 90%;
+    }
+
+    #BauHaus {
+        grid-area: BauHaus;
+    }
+
+    #Naturaleza {
+        grid-area: Naturaleza;
+        min-width: 90%;
     }
 
     /* Redes Sociales */
     .RRSS {
-        max-width: 60%;
+        grid-area: RRSS;
+        min-width: 95%;
+        max-height: 45%;
+    }
+
+    footer {
+        grid-area: footer;
     }
 }
 
