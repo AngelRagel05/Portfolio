@@ -199,26 +199,6 @@ h2 {
     color: var(--color-senalizacion);
 }
 
-/* Boton pa'rriba */
-#SubirArriba {
-    color: var(--color-primario);
-    font-size: xx-large;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    border: none;
-    cursor: pointer;
-}
-
-#SubirArriba a {
-    text-decoration: none;
-}
-
-#SubirArriba:hover {
-    transition: background 0.3s, transform 0.2s;
-    transform: scale(1.5);
-}
-
 /* Footer */
 footer {
     text-align: center;
