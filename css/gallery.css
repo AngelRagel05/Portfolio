@@ -176,10 +176,10 @@ img {
 /* Boton pa'rriba */
 #SubirArriba {
     color: var(--color-primario);
-    font-size: xx-large;
+    font-size: 3em;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 50px;
+    right: 50px;
     border: none;
     cursor: pointer;
 }
