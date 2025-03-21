@@ -104,12 +104,13 @@ img {
     box-shadow: 0 4px 10px rgb(0, 0, 0);
 }
 
+/* Le añado sombrita y le pongo fondo porque el de iberdrola venia sin fondo y se quedaba feooo */
 .Proyecto img {
     filter: drop-shadow(40px 25px 50px #00000087);
     background-color: #000000;
-    
 }
 
+/* Añado el efecto que gira sobre si mismo */
 .Proyecto img:hover {
     animation: rotar 5s linear infinite;
     cursor: pointer;
@@ -123,6 +124,7 @@ img {
     }
 }
 
+/* Añado fuente y tamaño en el párrafo */
 .Proyecto p {
     margin: 2em 1em 1em 1em;
     font-size: x-large;

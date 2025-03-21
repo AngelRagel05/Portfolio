@@ -117,45 +117,6 @@ h2 {
     padding: 1em;
 }
 
-/* Proyectos */
-.Proyectos {
-    max-width: 90%;
-    background: var(--color-fondo);
-    border-radius: 1em;
-    transition: transform 0.3s, box-shadow 0.3s;
-    margin: 1em auto 1em auto;
-    padding: 0em 0em 1em 0em;
-}
-
-.Proyectos:hover {
-    transform: scale(1.0);
-    box-shadow: 0 4px 10px rgb(0, 0, 0);
-}
-
-.Repositorio {
-    max-width: 70%;
-    background: var(--color-primario);
-    color: var(--color-fondo);
-    border-radius: 1em;
-    margin: 1em auto 1em auto;
-    padding: 1em;
-    transition: transform 0.4s;
-}
-
-.Repositorio:hover {
-    transform: translateY(-10px);
-}
-
-.Repositorio h3 a {
-    color: var(--color-secundario);
-    text-decoration: none;
-    font-size: 1.4rem;
-}
-
-.Repositorio h3 a:hover {
-    color: var(--color-senalizacion);
-}
-
 /* Reder Sociales */
 .RRSS {
     max-width: 90%;
@@ -224,11 +185,6 @@ footer {
         padding: 0em 1em 0em 1em;
     }
 
-    /* Proyectos */
-    .Proyectos {
-        max-width: 75%;
-    }
-
     /* Redes Sociales */
     .RRSS {
         max-width: 75%;
@@ -244,11 +200,6 @@ footer {
 
     .Habilidades li {
         padding: 0em 1em 0em 1em;
-    }
-
-    /* Proyectos */
-    .Proyectos {
-        max-width: 60%;
     }
 
     /* Redes Sociales */
