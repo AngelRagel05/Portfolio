@@ -88,6 +88,18 @@ img {
     border-radius: 100%;
 }
 
+/* Con este efecto hago que las secciones se muevan, preguntando a ChatGPT */
+section {
+    opacity: 1;
+    transform: translateY(1em);
+    transition: all 1s ease-in-out;
+}
+
+section.visible {
+    opacity: 0;
+    transform: translateY(0);
+}
+
 /* Proyectos */
 .Proyecto {
     max-width: 90%;
@@ -280,18 +292,4 @@ footer {
     footer {
         grid-area: footer;
     }
-}
-
-/* JavaScript */
-
-/* Con este efecto hago que las secciones se muevan, preguntando a ChatGPT */
-section {
-    opacity: 1;
-    transform: translateY(1em);
-    transition: all 1s ease-in-out;
-}
-
-section.visible {
-    opacity: 0;
-    transform: translateY(0);
 }

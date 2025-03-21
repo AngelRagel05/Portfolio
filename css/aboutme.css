@@ -81,6 +81,18 @@ h2 {
     font-family: 'Quantico', system-ui;
 }
 
+/* Con este efecto hago que las secciones se muevan, preguntando a ChatGPT */
+section {
+    opacity: 1;
+    transform: translateY(1em);
+    transition: all 1s ease-in-out;
+}
+
+section.visible {
+    opacity: 0;
+    transform: translateY(0);
+}
+
 /* Sobre mí */
 .SobreMi {
     max-width: 90%;
@@ -205,18 +217,4 @@ footer {
     .RRSS {
         max-width: 60%;
     }
-}
-
-/* JavaScript */
-
-/* Con este efecto hago que las secciones se muevan, preguntando a ChatGPT */
-section {
-    opacity: 1;
-    transform: translateY(1em);
-    transition: all 1s ease-in-out;
-}
-
-section.visible {
-    opacity: 0;
-    transform: translateY(0);
 }
